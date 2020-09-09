@@ -1,13 +1,14 @@
 new Vue({
     el: '#vue-app',
     data: {
-        name: 'Nigel',
-        website: 'https://www.google.com',
-        websiteTag: '<a href="https://www.google.com">Go to Google</a>'
+       age: '25'
     },
     methods: {
-        greet : function(){
-            return 'Good Afternoon';
+        add : function(){
+            this.age++;
+        },
+        subtract : function(){
+            this.age--;
         }
     }
 });
