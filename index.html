@@ -19,6 +19,11 @@
            <h1>Two-Way Data Binding</h1>
            <input type="text" v-model="name"/>
            <p>My name is {{name}}</p>
+
+           <h1>Computer Properties</h1>
+           <p>a= {{a}}</p>
+           <button @click="a++">Add to a</button>
+           <p>Age + a = {{addToA}}</p>
         </div>
     </body>
     <script src="app.js"></script>

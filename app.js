@@ -1,8 +1,9 @@
 new Vue({
     el: '#vue-app',
     data: {
-       age: '25',
-       name: ''
+       age: 25,
+       name: '',
+       a: 0
     },
     methods: {
         add : function(){
@@ -10,6 +11,11 @@ new Vue({
         },
         subtract : function(){
             this.age--;
+        }
+    },
+    computed: {
+        addToA: function(){
+            return this.a + this.age;
         }
     }
 });
