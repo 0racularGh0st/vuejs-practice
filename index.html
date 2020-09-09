@@ -9,6 +9,9 @@
     <body>
         <div id="vue-app">
             <h1>Hey, {{ name }}, {{greet()}}</h1>
+            <a v-bind:href="website">Go to Google</a>
+            <a :href="website">Go to Google</a>
+            <p v-html="websiteTag"></p>
         </div>
     </body>
     <script src="app.js"></script>
