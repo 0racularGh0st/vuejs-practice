@@ -43,6 +43,23 @@
            <button @click="error=!error">Toggle Error</button>
            <p v-if="error">Error using v-if</p>
            <p v-show="success">Success using v-show</p>
+
+           <h1>Looping using v-for</h1>
+           <h3>Characters</h3>
+           <ul>
+               <li v-for="x in characters">{{x}}</li>
+           </ul>
+
+           <h3>Characters with age</h3>
+           <template v-for="(character,index) in titans">
+               <div>{{index}}. {{character.name}} : {{character.age}}</div>
+           </template>
+           <h3>Characters using key val pair</h3>
+           <template v-for="titan in titans">
+           <div v-for="(val,key) in titan">
+            <p>{{key}} : {{val}}</p>
+           </div>
+            </template>
         </div>
     </body>
     <script src="app.js"></script>

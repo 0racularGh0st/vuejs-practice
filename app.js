@@ -7,7 +7,13 @@ new Vue({
        available: false,
        nearby: false,
        success: false,
-       error: false
+       error: false,
+       characters: ['Eren','Mikasa','Armin'],
+       titans: [
+           {name : 'Eren', age: 22},
+           {name : 'Mikasa', age: 23},
+           {name: 'Armin', age: 21}
+       ]
     },
     methods: {
         add : function(){
