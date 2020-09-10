@@ -5,7 +5,9 @@ new Vue({
        name: '',
        a: 0,
        available: false,
-       nearby: false
+       nearby: false,
+       success: false,
+       error: false
     },
     methods: {
         add : function(){

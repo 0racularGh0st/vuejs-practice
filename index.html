@@ -38,6 +38,11 @@
             <span>Vacancy</span>
            </div>
            
+           <h1>Conditionals</h1>
+           <button @click="success=!success">Toggle success</button>
+           <button @click="error=!error">Toggle Error</button>
+           <p v-if="error">Error using v-if</p>
+           <p v-show="success">Success using v-show</p>
         </div>
     </body>
     <script src="app.js"></script>
