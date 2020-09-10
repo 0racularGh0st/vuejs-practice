@@ -3,7 +3,9 @@ new Vue({
     data: {
        age: 25,
        name: '',
-       a: 0
+       a: 0,
+       available: false,
+       nearby: false
     },
     methods: {
         add : function(){
@@ -16,6 +18,12 @@ new Vue({
     computed: {
         addToA: function(){
             return this.a + this.age;
+        },
+        compClasses: function(){
+            return {
+                available: this.available,
+                nearby: this.nearby
+            }
         }
     }
 });

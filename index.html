@@ -20,10 +20,24 @@
            <input type="text" v-model="name"/>
            <p>My name is {{name}}</p>
 
-           <h1>Computer Properties</h1>
+           <h1>Computed Properties</h1>
            <p>a= {{a}}</p>
            <button @click="a++">Add to a</button>
            <p>Age + a = {{addToA}}</p>
+
+           <h1>Dynamic CSS</h1>
+           <h3>Example 1</h3>
+           <div v-on:click="available = !available" v-bind:class="{available: available}">
+            <span>Vacancy</span>
+           </div>
+
+           <h3>Example 2</h3>
+           <button @click="available=!available">Toggle Available</button>
+           <button @click="nearby=!nearby">Toggle Nearby</button>
+           <div v-bind:class="compClasses">
+            <span>Vacancy</span>
+           </div>
+           
         </div>
     </body>
     <script src="app.js"></script>
