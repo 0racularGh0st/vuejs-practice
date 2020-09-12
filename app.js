@@ -1,3 +1,16 @@
+Vue.component('greeting',{
+    template: '<p>This is a reusable component {{name}} <button @click="changeName();">Change Name</button></p>',
+    data: function(){
+        return {
+            name: 'Nigel'
+        }
+    },
+    methods:{
+        changeName: function(){
+            this.name='David'
+        }
+    }
+});
 var one = new Vue({
     el: '#vue-app-one',
     data: {
@@ -51,3 +64,4 @@ var two = new Vue({
 
     }
 });
+
