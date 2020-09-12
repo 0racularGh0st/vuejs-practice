@@ -53,11 +53,15 @@ var one = new Vue({
 var two = new Vue({
     el: '#vue-app-two',
     data: {
-
+        output: "Your fav food"
     },
     methods: {
         changeOneTitle: function(){
             one.title= "1st Vue Instance"
+        },
+        readRefs: function(){
+            console.log(this.$refs.input.value);
+            this.output=this.$refs.input.value;
         }
     },
     computed: {
