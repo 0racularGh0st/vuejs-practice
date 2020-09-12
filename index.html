@@ -7,7 +7,8 @@
         <script src="https://unpkg.com/vue"></script>
     </head>
     <body>
-        <div id="vue-app">
+        <div id="vue-app-one">
+            <h1>{{title}} </h1>
            <h1>Events</h1>
            <p>My age is : {{age}}</p>
            <button v-on:click="age++">Add a year</button>
@@ -59,7 +60,15 @@
            <div v-for="(val,key) in titan">
             <p>{{key}} : {{val}}</p>
            </div>
-            </template>
+           </template>
+
+           <h1>Multiple Vue instances</h1>
+        </div>
+
+        <div id="vue-app-two">
+            <h1>2nd vue Instance</h1>
+            <button @click="changeOneTitle();">Change Title of 1st Instance</button>
+
         </div>
     </body>
     <script src="app.js"></script>

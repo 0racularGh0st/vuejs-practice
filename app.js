@@ -1,6 +1,7 @@
-new Vue({
-    el: '#vue-app',
+var one = new Vue({
+    el: '#vue-app-one',
     data: {
+       title: '1st instance',
        age: 25,
        name: '',
        a: 0,
@@ -33,5 +34,20 @@ new Vue({
                 nearby: this.nearby
             }
         }
+    }
+});
+
+var two = new Vue({
+    el: '#vue-app-two',
+    data: {
+
+    },
+    methods: {
+        changeOneTitle: function(){
+            one.title= "1st Vue Instance"
+        }
+    },
+    computed: {
+
     }
 });
